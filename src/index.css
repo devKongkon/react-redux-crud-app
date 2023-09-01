@@ -1,0 +1,20 @@
+body{
+  background-color: #414141;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+.active{
+  background-color: red;
+  color: purple;
+}
