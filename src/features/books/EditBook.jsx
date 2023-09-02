@@ -14,7 +14,7 @@ const EditBook = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(updateBook({id, title, author}));
+    dispatch(updateBook({ id, title, author}));
     navigate("/show-books", { replace: true })
   }
 
@@ -29,6 +29,7 @@ const EditBook = () => {
             id="title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
+            required
           />
         </div>
 
@@ -40,6 +41,7 @@ const EditBook = () => {
             id="author"
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
+            required
           />
         </div>
         <button type="submit">Update</button>

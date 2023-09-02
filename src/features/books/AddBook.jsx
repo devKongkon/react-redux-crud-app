@@ -30,6 +30,7 @@ const AddBook = () => {
             id="title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
+            required
           />
         </div>
 
@@ -41,6 +42,7 @@ const AddBook = () => {
             id="author"
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
+            required
           />
         </div>
         <button type="submit">Add book</button>
